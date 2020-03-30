@@ -1,4 +1,6 @@
 gdjs.Level2Code = {};
+gdjs.Level2Code.GDPlayerObjects1_1final = [];
+
 gdjs.Level2Code.GDPlayerObjects1= [];
 gdjs.Level2Code.GDPlayerObjects2= [];
 gdjs.Level2Code.GDPlayerObjects3= [];
@@ -51,7 +53,7 @@ gdjs.Level2Code.condition2IsTrue_1 = {val:false};
 gdjs.Level2Code.condition3IsTrue_1 = {val:false};
 
 
-gdjs.Level2Code.eventsList0x2d21ea8c = function(runtimeScene) {
+gdjs.Level2Code.eventsList0x3c3b8aac = function(runtimeScene) {
 
 {
 
@@ -169,7 +171,7 @@ gdjs.Level2Code.condition1IsTrue_0.val = gdjs.evtTools.input.isKeyPressed(runtim
 }if ( gdjs.Level2Code.condition1IsTrue_0.val ) {
 {
 {gdjs.Level2Code.conditionTrue_1 = gdjs.Level2Code.condition2IsTrue_0;
-gdjs.Level2Code.conditionTrue_1.val = runtimeScene.getOnceTriggers().triggerOnce(757199668);
+gdjs.Level2Code.conditionTrue_1.val = runtimeScene.getOnceTriggers().triggerOnce(1010537300);
 }
 }}
 }
@@ -206,7 +208,7 @@ gdjs.Level2Code.condition1IsTrue_0.val = gdjs.evtTools.input.isKeyPressed(runtim
 }if ( gdjs.Level2Code.condition1IsTrue_0.val ) {
 {
 {gdjs.Level2Code.conditionTrue_1 = gdjs.Level2Code.condition2IsTrue_0;
-gdjs.Level2Code.conditionTrue_1.val = runtimeScene.getOnceTriggers().triggerOnce(757200524);
+gdjs.Level2Code.conditionTrue_1.val = runtimeScene.getOnceTriggers().triggerOnce(1010538244);
 }
 }}
 }
@@ -275,7 +277,7 @@ gdjs.Level2Code.GDPlayerHitBoxObjects2.length = k;}if ( gdjs.Level2Code.conditio
 if ( gdjs.Level2Code.condition1IsTrue_0.val ) {
 {
 {gdjs.Level2Code.conditionTrue_1 = gdjs.Level2Code.condition2IsTrue_0;
-gdjs.Level2Code.conditionTrue_1.val = runtimeScene.getOnceTriggers().triggerOnce(757185612);
+gdjs.Level2Code.conditionTrue_1.val = runtimeScene.getOnceTriggers().triggerOnce(1010522444);
 }
 }}
 }
@@ -368,7 +370,7 @@ if (gdjs.Level2Code.condition1IsTrue_0.val) {
 }
 
 
-}; //End of gdjs.Level2Code.eventsList0x2d21ea8c
+}; //End of gdjs.Level2Code.eventsList0x3c3b8aac
 gdjs.Level2Code.mapOfGDgdjs_46Level2Code_46GDPlayerObjects1Objects = Hashtable.newFrom({"Player": gdjs.Level2Code.GDPlayerObjects1});gdjs.Level2Code.mapOfGDgdjs_46Level2Code_46GDtableObjects1Objects = Hashtable.newFrom({"table": gdjs.Level2Code.GDtableObjects1});gdjs.Level2Code.eventsList0x5b6e18 = function(runtimeScene) {
 
 {
@@ -429,7 +431,7 @@ for(var i = 0, k = 0, l = gdjs.Level2Code.GDPlayerHitBoxObjects1.length;i<l;++i)
 gdjs.Level2Code.GDPlayerHitBoxObjects1.length = k;}if (gdjs.Level2Code.condition0IsTrue_0.val) {
 
 { //Subevents
-gdjs.Level2Code.eventsList0x2d21ea8c(runtimeScene);} //End of subevents
+gdjs.Level2Code.eventsList0x3c3b8aac(runtimeScene);} //End of subevents
 }
 
 }
@@ -484,6 +486,156 @@ gdjs.Level2Code.condition0IsTrue_0.val = gdjs.evtTools.object.hitBoxesCollisionT
 }if (gdjs.Level2Code.condition0IsTrue_0.val) {
 {gdjs.evtTools.camera.showLayer(runtimeScene, "Dialogue");
 }}
+
+}
+
+
+{
+
+gdjs.Level2Code.GDPlayerObjects1.createFrom(runtimeScene.getObjects("Player"));
+
+gdjs.Level2Code.condition0IsTrue_0.val = false;
+{
+for(var i = 0, k = 0, l = gdjs.Level2Code.GDPlayerObjects1.length;i<l;++i) {
+    if ( gdjs.Level2Code.GDPlayerObjects1[i].getX() < 10 ) {
+        gdjs.Level2Code.condition0IsTrue_0.val = true;
+        gdjs.Level2Code.GDPlayerObjects1[k] = gdjs.Level2Code.GDPlayerObjects1[i];
+        ++k;
+    }
+}
+gdjs.Level2Code.GDPlayerObjects1.length = k;}if (gdjs.Level2Code.condition0IsTrue_0.val) {
+/* Reuse gdjs.Level2Code.GDPlayerObjects1 */
+gdjs.Level2Code.GDPlayerHitBoxObjects1.createFrom(runtimeScene.getObjects("PlayerHitBox"));
+{for(var i = 0, len = gdjs.Level2Code.GDPlayerHitBoxObjects1.length ;i < len;++i) {
+    gdjs.Level2Code.GDPlayerHitBoxObjects1[i].activateBehavior("PlatformerObject", false);
+}
+}{for(var i = 0, len = gdjs.Level2Code.GDPlayerObjects1.length ;i < len;++i) {
+    gdjs.Level2Code.GDPlayerObjects1[i].setAnimation(0);
+}
+}}
+
+}
+
+
+{
+
+gdjs.Level2Code.GDPlayerObjects1.length = 0;
+
+
+gdjs.Level2Code.condition0IsTrue_0.val = false;
+{
+{gdjs.Level2Code.conditionTrue_1 = gdjs.Level2Code.condition0IsTrue_0;
+gdjs.Level2Code.GDPlayerObjects1_1final.length = 0;gdjs.Level2Code.condition0IsTrue_1.val = false;
+gdjs.Level2Code.condition1IsTrue_1.val = false;
+{
+gdjs.Level2Code.GDPlayerObjects2.createFrom(runtimeScene.getObjects("Player"));
+for(var i = 0, k = 0, l = gdjs.Level2Code.GDPlayerObjects2.length;i<l;++i) {
+    if ( gdjs.Level2Code.GDPlayerObjects2[i].getX() < 10 ) {
+        gdjs.Level2Code.condition0IsTrue_1.val = true;
+        gdjs.Level2Code.GDPlayerObjects2[k] = gdjs.Level2Code.GDPlayerObjects2[i];
+        ++k;
+    }
+}
+gdjs.Level2Code.GDPlayerObjects2.length = k;if( gdjs.Level2Code.condition0IsTrue_1.val ) {
+    gdjs.Level2Code.conditionTrue_1.val = true;
+    for(var j = 0, jLen = gdjs.Level2Code.GDPlayerObjects2.length;j<jLen;++j) {
+        if ( gdjs.Level2Code.GDPlayerObjects1_1final.indexOf(gdjs.Level2Code.GDPlayerObjects2[j]) === -1 )
+            gdjs.Level2Code.GDPlayerObjects1_1final.push(gdjs.Level2Code.GDPlayerObjects2[j]);
+    }
+}
+}
+{
+gdjs.Level2Code.GDPlayerObjects2.createFrom(runtimeScene.getObjects("Player"));
+for(var i = 0, k = 0, l = gdjs.Level2Code.GDPlayerObjects2.length;i<l;++i) {
+    if ( gdjs.Level2Code.GDPlayerObjects2[i].getX() > 750 ) {
+        gdjs.Level2Code.condition1IsTrue_1.val = true;
+        gdjs.Level2Code.GDPlayerObjects2[k] = gdjs.Level2Code.GDPlayerObjects2[i];
+        ++k;
+    }
+}
+gdjs.Level2Code.GDPlayerObjects2.length = k;if( gdjs.Level2Code.condition1IsTrue_1.val ) {
+    gdjs.Level2Code.conditionTrue_1.val = true;
+    for(var j = 0, jLen = gdjs.Level2Code.GDPlayerObjects2.length;j<jLen;++j) {
+        if ( gdjs.Level2Code.GDPlayerObjects1_1final.indexOf(gdjs.Level2Code.GDPlayerObjects2[j]) === -1 )
+            gdjs.Level2Code.GDPlayerObjects1_1final.push(gdjs.Level2Code.GDPlayerObjects2[j]);
+    }
+}
+}
+{
+gdjs.Level2Code.GDPlayerObjects1.createFrom(gdjs.Level2Code.GDPlayerObjects1_1final);
+}
+}
+}if (gdjs.Level2Code.condition0IsTrue_0.val) {
+gdjs.Level2Code.GDPlayerHitBoxObjects1.createFrom(runtimeScene.getObjects("PlayerHitBox"));
+{for(var i = 0, len = gdjs.Level2Code.GDPlayerHitBoxObjects1.length ;i < len;++i) {
+    gdjs.Level2Code.GDPlayerHitBoxObjects1[i].activateBehavior("PlatformerObject", false);
+}
+}}
+
+}
+
+
+{
+
+gdjs.Level2Code.GDPlayerObjects1.createFrom(runtimeScene.getObjects("Player"));
+
+gdjs.Level2Code.condition0IsTrue_0.val = false;
+gdjs.Level2Code.condition1IsTrue_0.val = false;
+{
+for(var i = 0, k = 0, l = gdjs.Level2Code.GDPlayerObjects1.length;i<l;++i) {
+    if ( gdjs.Level2Code.GDPlayerObjects1[i].getX() < 10 ) {
+        gdjs.Level2Code.condition0IsTrue_0.val = true;
+        gdjs.Level2Code.GDPlayerObjects1[k] = gdjs.Level2Code.GDPlayerObjects1[i];
+        ++k;
+    }
+}
+gdjs.Level2Code.GDPlayerObjects1.length = k;}if ( gdjs.Level2Code.condition0IsTrue_0.val ) {
+{
+gdjs.Level2Code.condition1IsTrue_0.val = gdjs.evtTools.input.isKeyPressed(runtimeScene, "Right");
+}}
+if (gdjs.Level2Code.condition1IsTrue_0.val) {
+gdjs.Level2Code.GDPlayerHitBoxObjects1.createFrom(runtimeScene.getObjects("PlayerHitBox"));
+{for(var i = 0, len = gdjs.Level2Code.GDPlayerHitBoxObjects1.length ;i < len;++i) {
+    gdjs.Level2Code.GDPlayerHitBoxObjects1[i].activateBehavior("PlatformerObject", true);
+}
+}}
+
+}
+
+
+{
+
+gdjs.Level2Code.GDPlayerObjects1.createFrom(runtimeScene.getObjects("Player"));
+
+gdjs.Level2Code.condition0IsTrue_0.val = false;
+gdjs.Level2Code.condition1IsTrue_0.val = false;
+{
+for(var i = 0, k = 0, l = gdjs.Level2Code.GDPlayerObjects1.length;i<l;++i) {
+    if ( gdjs.Level2Code.GDPlayerObjects1[i].getX() > 750 ) {
+        gdjs.Level2Code.condition0IsTrue_0.val = true;
+        gdjs.Level2Code.GDPlayerObjects1[k] = gdjs.Level2Code.GDPlayerObjects1[i];
+        ++k;
+    }
+}
+gdjs.Level2Code.GDPlayerObjects1.length = k;}if ( gdjs.Level2Code.condition0IsTrue_0.val ) {
+{
+gdjs.Level2Code.condition1IsTrue_0.val = gdjs.evtTools.input.isKeyPressed(runtimeScene, "Left");
+}}
+if (gdjs.Level2Code.condition1IsTrue_0.val) {
+gdjs.Level2Code.GDPlayerHitBoxObjects1.createFrom(runtimeScene.getObjects("PlayerHitBox"));
+{for(var i = 0, len = gdjs.Level2Code.GDPlayerHitBoxObjects1.length ;i < len;++i) {
+    gdjs.Level2Code.GDPlayerHitBoxObjects1[i].activateBehavior("PlatformerObject", true);
+}
+}}
+
+}
+
+
+{
+
+
+{
+}
 
 }
 
