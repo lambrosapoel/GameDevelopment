@@ -63,7 +63,7 @@ gdjs.MenuCode.condition1IsTrue_0 = {val:false};
 gdjs.MenuCode.condition2IsTrue_0 = {val:false};
 
 
-gdjs.MenuCode.mapOfGDgdjs_46MenuCode_46GDStartObjects2Objects = Hashtable.newFrom({"Start": gdjs.MenuCode.GDStartObjects2});gdjs.MenuCode.mapOfGDgdjs_46MenuCode_46GDControlsObjects2Objects = Hashtable.newFrom({"Controls": gdjs.MenuCode.GDControlsObjects2});gdjs.MenuCode.mapOfGDgdjs_46MenuCode_46GDBackObjects2Objects = Hashtable.newFrom({"Back": gdjs.MenuCode.GDBackObjects2});gdjs.MenuCode.mapOfGDgdjs_46MenuCode_46GDCheatsObjects2Objects = Hashtable.newFrom({"Cheats": gdjs.MenuCode.GDCheatsObjects2});gdjs.MenuCode.mapOfGDgdjs_46MenuCode_46GDBack2Objects2Objects = Hashtable.newFrom({"Back2": gdjs.MenuCode.GDBack2Objects2});gdjs.MenuCode.mapOfGDgdjs_46MenuCode_46GDQuitObjects2Objects = Hashtable.newFrom({"Quit": gdjs.MenuCode.GDQuitObjects2});gdjs.MenuCode.eventsList0x3c39ab3c = function(runtimeScene) {
+gdjs.MenuCode.mapOfGDgdjs_46MenuCode_46GDStartObjects2Objects = Hashtable.newFrom({"Start": gdjs.MenuCode.GDStartObjects2});gdjs.MenuCode.mapOfGDgdjs_46MenuCode_46GDControlsObjects2Objects = Hashtable.newFrom({"Controls": gdjs.MenuCode.GDControlsObjects2});gdjs.MenuCode.mapOfGDgdjs_46MenuCode_46GDBackObjects2Objects = Hashtable.newFrom({"Back": gdjs.MenuCode.GDBackObjects2});gdjs.MenuCode.mapOfGDgdjs_46MenuCode_46GDCheatsObjects2Objects = Hashtable.newFrom({"Cheats": gdjs.MenuCode.GDCheatsObjects2});gdjs.MenuCode.mapOfGDgdjs_46MenuCode_46GDBack2Objects2Objects = Hashtable.newFrom({"Back2": gdjs.MenuCode.GDBack2Objects2});gdjs.MenuCode.mapOfGDgdjs_46MenuCode_46GDQuitObjects2Objects = Hashtable.newFrom({"Quit": gdjs.MenuCode.GDQuitObjects2});gdjs.MenuCode.eventsList0x2d511ec = function(runtimeScene) {
 
 {
 
@@ -196,7 +196,7 @@ if (gdjs.MenuCode.condition1IsTrue_0.val) {
 }
 
 
-}; //End of gdjs.MenuCode.eventsList0x3c39ab3c
+}; //End of gdjs.MenuCode.eventsList0x2d511ec
 gdjs.MenuCode.eventsList0x5b6e18 = function(runtimeScene) {
 
 {
@@ -223,7 +223,7 @@ gdjs.MenuCode.condition0IsTrue_0.val = gdjs.evtTools.input.isMouseButtonPressed(
 }if (gdjs.MenuCode.condition0IsTrue_0.val) {
 
 { //Subevents
-gdjs.MenuCode.eventsList0x3c39ab3c(runtimeScene);} //End of subevents
+gdjs.MenuCode.eventsList0x2d511ec(runtimeScene);} //End of subevents
 }
 
 }
